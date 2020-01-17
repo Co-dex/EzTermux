@@ -6,7 +6,7 @@ cp "$PREFIX/etc/apt/sources.list" "$PREFIX/etc/apt/sources.list.bak"
 echo "change default repository to USTC repository"
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.ustc.edu.cn/termux stable main@' $PREFIX/etc/apt/sources.list
 echo "if you meet some error can reboot termux and execute pkg up or dpkg --configure -a"
-pkg up
+apt update
 echo "Add more keys to touch Keyboard"
 echo "extra-keys = [ \
  ['ESC','|','/','HOME','UP','END','PGUP','DEL'], \
