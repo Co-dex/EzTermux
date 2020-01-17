@@ -5,7 +5,7 @@
 sh -c "$(curl -fsSL https://github.com/Co-dex/EzTermux/raw/master/eztermux.sh)"
 
 # features
-- [x] 使用tuna作为默认软件源
+- [x] 使用USTC作为默认软件源
 - [x] 增加虚拟按键
 - [x] 安装 zsh 和 ohmyzsh 感谢 [Cabbagec](https://github.com/Cabbagec)
 - [ ] 后续功能等待增加
