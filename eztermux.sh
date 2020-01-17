@@ -4,7 +4,7 @@ echo "Backup '$PREFIX/etc/apt/sources.list' to '$PREFIX/etc/apt/sources.listsour
 echo
 cp "$PREFIX/etc/apt/sources.list" "$PREFIX/etc/apt/sources.list.bak"
 echo "change default repository to USTC repository"
-sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.ustc.edu.cn/termux stable main@' '$PREFIX/etc/apt/sources.list'
+sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.ustc.edu.cn/termux stable main@' $PREFIX/etc/apt/sources.list
 echo "if you meet some error can reboot termux and execute pkg up or dpkg --configure -a"
 pkg up
 echo "Add more keys to touch Keyboard"
